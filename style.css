@@ -1,0 +1,214 @@
+:root {
+  --fnt-menu: "Nunito", Courier, monospace;
+  --fnt-login: "Overpass";
+  --clr-primary-white: #ffffff;
+  --clr-primary-black: #444b59;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fnt-menu);
+  color: var(--clr-primary-white);
+  background-color: #00abe1;
+}
+
+.menu ul li {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.login-form h1 {
+  font-size: 1.2em;
+  font-family: var(--fnt-login);
+  letter-spacing: 3.6px;
+  font-weight: 600;
+}
+
+.login-form h4 {
+  color: var(--clr-primary-black);
+  font-size: 0.9em;
+  letter-spacing: 2.4px;
+}
+
+.login-form h4 a {
+  color: var(--clr-primary-white);
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.login-form h4 a:hover {
+  color: #bde1ec;
+}
+
+.login-form div label {
+  color: #444b59;
+}
+
+.login-form > div:nth-child(3) {
+  margin-top: 50px;
+}
+
+main .container {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.login-form {
+  width: 400px;
+}
+
+.forget {
+  margin-left: 125px;
+  color: white;
+  text-decoration: none;
+}
+
+.container .sidebar-image {
+  background-image: url(img/Image.png);
+  width: 550px;
+  height: 540px;
+  background-size: cover;
+  font-size: 0;
+}
+
+.sign-in-btn {
+  background-color: #02c2ff;
+  border: none;
+  letter-spacing: 2.4px;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.password-form {
+  border-radius: 50px;
+}
+
+.divider {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  color: #444b59;
+  position: absolute;
+  left: 20vw;
+  bottom: 20vh;
+}
+
+.hr-divider {
+  margin: 35px;
+}
+
+/* Login Option */
+
+.login-form .login-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form .login-option a {
+  margin: 0;
+}
+
+.login-form .login-option .google {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.login-form .login-option .google:hover,
+.login-form .login-option .facebook:hover,
+.login-form .login-option .apple:hover {
+  background-color: #bde1ec;
+}
+
+.login-form .login-option .google a {
+  background-image: url(img/google.png);
+  background-size: cover;
+  display: inline-block;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  margin: 5px 10px;
+}
+
+.login-form .login-option .facebook {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.login-form .login-option .facebook a {
+  background-image: url(img/facebook.png);
+  background-size: cover;
+  display: inline-block;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  margin: 5px 10px;
+}
+.login-form .login-option .apple {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.login-form .login-option .apple a {
+  background-image: url(img/apple.png);
+  background-size: cover;
+  display: inline-block;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  margin: 5px 10px;
+}
+
+/* Responsive */
+@media (max-width: 376px) {
+  .container {
+    padding-left: 50px;
+  }
+
+  .container .sidebar-image {
+    background-image: none;
+  }
+
+  .menu {
+    background-color: #00ace1a2;
+    border: 1px solid;
+  }
+
+  .divider {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    color: #444b59;
+    position: absolute;
+    left: 130px;
+    bottom: 150px;
+  }
+
+  .hr-divider {
+    margin: 35px;
+  }
+
+  .login-form .login-option .facebook {
+    margin: 0 10px;
+  }
+}
