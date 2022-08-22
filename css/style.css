@@ -67,7 +67,7 @@ main .container {
 }
 
 .container .sidebar-image {
-  background-image: url(img/Image.png);
+  background-image: url(../img/Image.png);
   width: 550px;
   height: 540px;
   background-size: cover;
@@ -128,7 +128,7 @@ main .container {
 }
 
 .login-form .login-option .google a {
-  background-image: url(img/google.png);
+  background-image: url(../img/google.png);
   background-size: cover;
   display: inline-block;
   border: 0;
@@ -149,7 +149,7 @@ main .container {
 }
 
 .login-form .login-option .facebook a {
-  background-image: url(img/facebook.png);
+  background-image: url(../img/facebook.png);
   background-size: cover;
   display: inline-block;
   border: 0;
@@ -169,7 +169,7 @@ main .container {
 }
 
 .login-form .login-option .apple a {
-  background-image: url(img/apple.png);
+  background-image: url(../img/apple.png);
   background-size: cover;
   display: inline-block;
   border: 0;
