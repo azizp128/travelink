@@ -7,17 +7,27 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: var(--fnt-menu);
   color: var(--clr-primary-white);
   background-color: #00abe1;
 }
 
-.menu ul li {
-  margin-top: 10px;
-  margin-right: 15px;
+.container {
+  margin-top: 4em;
+  margin-left: 0.2em;
+  margin-right: 1em;
+  min-height: 500px;
+  background-image: url(../img/Image.png);
+  background-size: 350px 450px;
+  background-repeat: no-repeat;
+  background-position-x: 101%;
 }
 
+.container .sidebar-image {
+  display: none;
+}
+
+/* Heading */
 .login-form h1 {
   font-size: 1.2em;
   font-family: var(--fnt-login);
@@ -50,28 +60,11 @@ body {
   margin-top: 50px;
 }
 
-main .container {
-  display: flex;
-  margin-top: 80px;
-  justify-content: space-between;
-}
-
-.login-form {
-  width: 400px;
-}
-
+/* footer */
 .forget {
-  margin-left: 125px;
+  float: right;
   color: white;
   text-decoration: none;
-}
-
-.container .sidebar-image {
-  background-image: url(../img/Image.png);
-  width: 550px;
-  height: 540px;
-  background-size: cover;
-  font-size: 0;
 }
 
 .sign-in-btn {
@@ -87,21 +80,15 @@ main .container {
 }
 
 .divider {
+  width: 50%;
+  margin: auto;
   background-color: white;
   border-radius: 5px;
-  padding: 5px;
+  text-align: center;
   color: #444b59;
-  position: absolute;
-  left: 20vw;
-  bottom: 20vh;
-}
-
-.hr-divider {
-  margin: 35px;
 }
 
 /* Login Option */
-
 .login-form .login-option {
   display: flex;
   justify-content: space-between;
@@ -179,50 +166,22 @@ main .container {
   margin: 5px 10px;
 }
 
-/* Responsive */
-@media (max-width: 376px) {
+/* Responsive Breakpoints */
+@media (min-width: 1000px) {
   .container {
-    padding-left: 50px;
-  }
-
-  .container .sidebar-image {
+    margin-top: 4em;
+    margin-left: 4em;
     background-image: none;
   }
 
-  .menu {
-    background-color: #00ace1a2;
-    border: 1px solid;
-  }
-
-  .divider {
-    background-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    color: #444b59;
-    position: absolute;
-    left: 130px;
-    bottom: 150px;
-  }
-
-  .hr-divider {
-    margin: 35px;
-  }
-
-  .login-form .login-option .facebook {
-    margin: 0 10px;
-  }
-}
-
-@media (max-width: 900px) and (min-width: 376px) {
-  main .container {
-    margin: 50px;
-  }
-
   .container .sidebar-image {
-    background-image: none;
+    display: initial;
+    width: 2%;
+    height: 85vh;
   }
 
-  .divider {
-    display: none;
+  .forget {
+    color: white;
+    text-decoration: none;
   }
 }
